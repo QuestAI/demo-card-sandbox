@@ -12,12 +12,13 @@
  *
  **********************************************************************/
 
-import React from 'react';
-import { SvgIcon, Button } from '@mui/material';
-import { ReactComponent as StarBorderFilled } from 'src/assets/images//StarBorderFilled_1.svg';
-import { styled } from '@mui/material/styles';
-import Image1Image from 'src/assets/images//Image.png';
-import useCard2 from 'src/components/Card2/useCard2';
+import React from 'react'
+import { SvgIcon, Button } from '@mui/material'
+import { ReactComponent as StarBorderFilled } from 'src/assets/images//StarBorderFilled_1.svg'
+import { styled } from '@mui/material/styles'
+// import Image1Image from 'src/assets/images//Image.png'
+import ImageAvif from 'src/assets/images//Image_avif.avif'
+import useCard2 from 'src/components/Card2/useCard2'
 
 const TypeQuest = styled('div')(({ theme }) => ({
   backgroundColor: `rgba(250, 250, 250, 1)`,
@@ -34,10 +35,10 @@ const TypeQuest = styled('div')(({ theme }) => ({
   boxSizing: `border-box`,
   overflow: `hidden`,
   height: 'auto',
-}));
+}))
 
 const Image1 = styled('div')({
-  backgroundImage: `url(${Image1Image})`,
+  backgroundImage: `url(${ImageAvif})`,
   backgroundPosition: `center`,
   backgroundSize: `cover`,
   backgroundRepeat: `no-repeat`,
@@ -51,7 +52,7 @@ const Image1 = styled('div')({
   height: `287px`,
   margin: `0px`,
   overflow: `hidden`,
-});
+})
 
 const Content = styled('div')({
   display: `flex`,
@@ -64,7 +65,7 @@ const Content = styled('div')({
   boxSizing: `border-box`,
   alignSelf: `stretch`,
   margin: `18px 0px 0px 0px`,
-});
+})
 
 const Content1 = styled('div')({
   display: `flex`,
@@ -77,7 +78,7 @@ const Content1 = styled('div')({
   boxSizing: `border-box`,
   alignSelf: `stretch`,
   margin: `0px`,
-});
+})
 
 const About = styled('div')({
   display: `flex`,
@@ -90,7 +91,7 @@ const About = styled('div')({
   boxSizing: `border-box`,
   width: `350px`,
   margin: `0px`,
-});
+})
 
 const Label = styled('div')(({ theme }) => ({
   backgroundColor: `rgba(3, 169, 244, 1)`,
@@ -105,7 +106,7 @@ const Label = styled('div')(({ theme }) => ({
   boxSizing: `border-box`,
   height: `32px`,
   margin: `0px`,
-}));
+}))
 
 const Frame1 = styled('div')({
   display: `flex`,
@@ -118,7 +119,7 @@ const Frame1 = styled('div')({
   boxSizing: `border-box`,
   height: `24px`,
   margin: `0px`,
-});
+})
 
 const Text = styled('div')({
   display: `flex`,
@@ -130,7 +131,7 @@ const Text = styled('div')({
   padding: `3px`,
   boxSizing: `border-box`,
   margin: `0px`,
-});
+})
 
 const Label1 = styled('div')(({ theme }) => ({
   textAlign: `center`,
@@ -145,7 +146,7 @@ const Label1 = styled('div')(({ theme }) => ({
   textDecoration: `none`,
   textTransform: `none`,
   margin: `0px`,
-}));
+}))
 
 const SizeDetails = styled('div')(({ theme }) => ({
   textAlign: `left`,
@@ -160,7 +161,7 @@ const SizeDetails = styled('div')(({ theme }) => ({
   textDecoration: `none`,
   textTransform: `none`,
   margin: `0px 0px 0px 10px`,
-}));
+}))
 
 const Details = styled('div')({
   display: `flex`,
@@ -173,7 +174,7 @@ const Details = styled('div')({
   boxSizing: `border-box`,
   width: `350px`,
   margin: `14px 0px 0px 0px`,
-});
+})
 
 const PropertyTitle = styled('div')(({ theme }) => ({
   textAlign: `left`,
@@ -189,7 +190,7 @@ const PropertyTitle = styled('div')(({ theme }) => ({
   textTransform: `none`,
   alignSelf: `stretch`,
   margin: `0px`,
-}));
+}))
 
 const LowerRow = styled('div')({
   display: `flex`,
@@ -202,7 +203,7 @@ const LowerRow = styled('div')({
   boxSizing: `border-box`,
   alignSelf: `stretch`,
   margin: `14px 0px 0px 0px`,
-});
+})
 
 const LockUp = styled('div')({
   display: `flex`,
@@ -213,7 +214,7 @@ const LockUp = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-});
+})
 
 const Price = styled('div')(({ theme }) => ({
   textAlign: `left`,
@@ -228,7 +229,7 @@ const Price = styled('div')(({ theme }) => ({
   textDecoration: `none`,
   textTransform: `none`,
   margin: `0px`,
-}));
+}))
 
 const Rating = styled('div')({
   display: `flex`,
@@ -240,14 +241,14 @@ const Rating = styled('div')({
   padding: `0px`,
   boxSizing: `border-box`,
   margin: `6px 0px 0px 0px`,
-});
+})
 
 const Icon1 = styled(SvgIcon)({
   color: `rgba(0, 0, 0, 0.87)`,
   width: `16px`,
   height: `16px`,
   margin: `0px`,
-});
+})
 
 const Rating1 = styled('div')(({ theme }) => ({
   textAlign: `left`,
@@ -264,7 +265,7 @@ const Rating1 = styled('div')(({ theme }) => ({
   textTransform: `none`,
   width: `161px`,
   margin: `0px 0px 0px 6px`,
-}));
+}))
 
 const Button1 = styled('div')({
   display: `flex`,
@@ -275,16 +276,32 @@ const Button1 = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-});
+})
 
 const ButtonContained = styled(Button)({
   height: `48px`,
   width: `133px`,
   margin: `0px`,
-});
+})
+
+const ImageContainer = styled('div')({
+  backgroundPosition: `center`,
+  backgroundSize: `cover`,
+  backgroundRepeat: `no-repeat`,
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `flex-start`,
+  alignItems: `flex-start`,
+  alignSelf: `stretch`,
+  height: `287px`,
+  margin: `0px`,
+  overflow: `hidden`,
+})
 
 function Card2(props) {
-  const { fns } = useCard2(props);
+  const { fns } = useCard2(props)
 
   return (
     <TypeQuest className={props.className}>
@@ -327,7 +344,7 @@ function Card2(props) {
         </Content1>
       </Content>
     </TypeQuest>
-  );
+  )
 }
 
-export default Card2;
+export default Card2
